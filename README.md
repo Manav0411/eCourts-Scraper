@@ -32,7 +32,7 @@ pip install -r requirements.txt
 3. If wkhtmltopdf is installed in a non-standard location, the script will try to detect it. You can also use the Playwright fallback (optional).
 
 
-# ecourts_scraper
+# eCourts_Scraper
 
 A tiny utility to download the daily cause list from the Indian eCourts services site and save it as a PDF.
 
@@ -108,8 +108,6 @@ Saved PDF to: data\cause_list_2025-10-15.pdf
 
 ## File structure
 
-Below is the current repository tree. Files not shown (hidden by OS) are excluded.
-
 ```
 ecourts_scraper/
 ├─ .gitignore
@@ -122,8 +120,6 @@ ecourts_scraper/
    ├─ .gitkeep
    └─ cause_list_2025-10-15.pdf
 ```
-
-If you add more modules or tests later, update this section accordingly.
 
 ## Troubleshooting
 
