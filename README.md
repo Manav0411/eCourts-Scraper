@@ -1,6 +1,6 @@
-# Ecourts_scraper
+# eCourts_Scraper
 
-This small Python script downloads the daily cause list webpage from the Indian eCourts services site and saves it as a PDF.
+This Python script downloads the daily cause list webpage from the Indian eCourts services site and saves it as a PDF.
 
 ## What it does
 
@@ -131,50 +131,6 @@ If you add more modules or tests later, update this section accordingly.
 - Missing Playwright: install optional deps and run `python -m playwright install`.
 - wkhtmltopdf errors: confirm wkhtmltopdf is installed and on PATH, or use Playwright for rendering.
 
-## Security & etiquette
-
-- Be considerate when scraping public services: avoid high-frequency requests and respect robots.txt and site terms of use.
-
 ## License
 
 See the `LICENSE` file in the repository.
-
-## Contributing
-
-Found an issue or want an improvement? Open an issue or a pull request.
-
-
-## Configuration & tips
-
-- The script attempts to detect common Windows locations for `wkhtmltopdf`. If yours is installed elsewhere, add it to PATH or update `find_wkhtmltopdf_config()` in `main.py`.
-- If the site returns a non-200 response or wkhtmltopdf cannot render the dynamic page, the script will try the Playwright fallback (requires optional deps and browsers).
-- If you hit rendering issues with `wkhtmltopdf`, consider increasing `javascript-delay` in `download_with_pdfkit()`.
-
-## Project structure
-
-- `main.py` — the scraper/renderer script
-- `requirements.txt` — required Python packages
-- `requirements-optional.txt` — optional packages for Playwright
-- `data/` — output PDFs are written here
-- `README.md`, `LICENSE`
-
-## Troubleshooting
-
-- Network errors: verify connectivity and whether the site is blocking automated requests.
-- Missing Playwright: install optional deps and run `python -m playwright install`.
-- wkhtmltopdf errors: confirm wkhtmltopdf is installed and on PATH, or use Playwright for rendering.
-
-## Security & etiquette
-
-- Be considerate when scraping public services: avoid high-frequency requests and respect robots.txt and site terms of use.
-
-## License
-
-This repository is provided as-is for educational purposes. See `LICENSE` for details.
-
-## Contact
-
-Found an issue or want an improvement? Open an issue or a pull request.
-## Contact
-
-Found an issue or want an improvement? Open an issue or a pull request.
