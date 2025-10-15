@@ -1,4 +1,3 @@
-today = datetime.date.today().isoformat()  # YYYY-MM-DD
 import argparse
 import logging
 import os
